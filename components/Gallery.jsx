@@ -1,6 +1,7 @@
 import React from "react"
 import { Container, Row, Col, Card } from "react-bootstrap"
 import { fakeData } from "../data/fakeData"
+import Layout from "@/components/Layout"
 
 const Gallery = () => {
 	return (

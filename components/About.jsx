@@ -1,5 +1,6 @@
 import React from "react"
 import { Container, Card, Row, Col } from "react-bootstrap"
+import Layout from "@/components/Layout"
 
 const About = () => {
 	return (

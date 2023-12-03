@@ -1,6 +1,7 @@
 import React from "react"
 import { fakeNailServiceData } from "../data/fakeNailServiceData"
 import { Container, Row, Col, Card, ListGroup } from "react-bootstrap"
+import Layout from "@/components/Layout"
 
 const Services = () => {
 	return (
