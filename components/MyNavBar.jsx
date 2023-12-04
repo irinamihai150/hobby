@@ -1,30 +1,31 @@
 import React from "react"
-import { Navbar, Nav } from "react-bootstrap"
-import Link from "next/link"
+import { Image, Navbar, Nav, Container } from "react-bootstrap"
 
 const MyNavBar = () => {
+	const logoPath = "/images/logo.jpg"
 	return (
-		<Navbar>
-			<Link href='/' passHref>
-				<Navbar.Brand>logo</Navbar.Brand>
-			</Link>
-			<Navbar.Toggle aria-controls='basic-navbar-nav' />
-			<Navbar.Collapse id='basic-navbar-nav'>
-				<Nav>
-					<Link href='/about' passHref>
-						About
-					</Link>
-					<Link href='/gallery' passHref>
-						Gallery
-					</Link>
-					<Link href='/services' passHref>
-						Services
-					</Link>
-					<Link href='/testimonials' passHref>
-						Testimonials
-					</Link>
-				</Nav>
-			</Navbar.Collapse>
+		<Navbar expand='lg'>
+			<Container>
+				<Navbar.Brand>
+					<Image
+						src={logoPath}
+						alt='Logo'
+						fluid
+						style={{ width: "100px", height: "100px", borderRadius: "50%" }}
+						className='rounded'
+					/>
+				</Navbar.Brand>
+				<Navbar.Toggle aria-controls='basic-navbar-nav' />
+				<Navbar.Collapse id='basic-navbar-nav'>
+					<Nav className='me-auto'>
+						<Nav.Link href='/home'>Home</Nav.Link>
+						<Nav.Link href='/about'>About</Nav.Link>
+						<Nav.Link href='/gallery'>Gallery</Nav.Link>
+						<Nav.Link href='/services'>Services</Nav.Link>
+						<Nav.Link href='/faqs'>Faqs</Nav.Link>
+					</Nav>
+				</Navbar.Collapse>
+			</Container>
 		</Navbar>
 	)
 }
