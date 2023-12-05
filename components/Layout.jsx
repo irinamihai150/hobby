@@ -1,23 +1,41 @@
+// components/Layout.jsx
 import MyNavBar from "./MyNavBar.jsx"
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
-import { FaInstagram, FaFacebook } from "react-icons/fa"
+import { FaInstagram, FaPinterest } from "react-icons/fa"
 
 const Layout = ({ children }) => {
 	let currentYear = new Date().getFullYear()
-
+	const backgroundStyle = {
+		backgroundImage: 'url("../images/image2.jpeg")',
+		// backgroundColor: "red",
+		backgroundSize: "cover",
+		backgroundPosition: "center",
+		backgroundRepeat: "no-repeat",
+		backgroundColor: "rgba(255, 255, 255, 0.8)",
+	}
 	return (
-		<div>
-			<header>
+		<div
+			style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
+		>
+			<header style={backgroundStyle}>
 				<MyNavBar />
 			</header>
-			<main>{children}</main>
+			<main style={{ flex: "1" }}>{children}</main>
 
-			<footer>
+			<footer
+				style={{
+					marginTop: "auto",
+					padding: "20px 0",
+					...backgroundStyle,
+				}}
+			>
 				<Container>
-					<Row className='align-items-center' style={{ height: "100px" }}>
-						<Col xs={12} sm={6} md={3}>
-							<footer>&copy; {currentYear} Nail Art</footer>
+					<Row className='align-items-center'>
+						<Col xs={12} md={3}>
+							<div className='text-center py-3'>
+								{currentYear} Nail Art &copy; All Rights Reserved
+							</div>
 						</Col>
 
 						<Col
@@ -34,15 +52,15 @@ const Layout = ({ children }) => {
 								>
 									<FaInstagram
 										size={30}
-										style={{ margin: 10, color: "pink" }}
+										style={{ margin: "0 10px", color: "pink" }}
 									/>
 								</a>
 								<a
-									href='https://www.facebook.com/'
+									href='https://www.pinterest.com/'
 									target='_blank'
 									rel='noopener noreferrer'
 								>
-									<FaFacebook size={30} style={{ color: "pink" }} />
+									<FaPinterest size={30} style={{ color: "pink" }} />
 								</a>
 							</div>
 						</Col>

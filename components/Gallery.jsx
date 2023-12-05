@@ -1,7 +1,7 @@
 import React from "react"
 import { Container, Row, Col, Card } from "react-bootstrap"
 import { fakeData } from "../data/fakeData"
-import Layout from "@/components/Layout"
+import ImageGallery from "react-image-gallery"
 
 const Gallery = () => {
 	return (
@@ -32,3 +32,22 @@ const Gallery = () => {
 }
 
 export default Gallery
+
+// import React from "react"
+// import { fakeData } from "../data/fakeData"
+// import ImageGallery from "react-image-gallery"
+
+// const Gallery = () => {
+// 	const galleryItems = fakeData.reduce((accumulator, category) => {
+// 		const categoryItems = category.items.map((item) => ({
+// 			original: item.image,
+// 			thumbnail: item.image,
+// 			description: item.description,
+// 		}))
+// 		return accumulator.concat(categoryItems)
+// 	}, [])
+
+// 	return <ImageGallery items={galleryItems} />
+// }
+
+// export default Gallery

@@ -7,13 +7,14 @@ const MyNavBar = () => {
 		<Navbar expand='lg'>
 			<Container>
 				<Navbar.Brand>
-					<Image
+					{/* <Image
 						src={logoPath}
 						alt='Logo'
 						fluid
 						style={{ width: "100px", height: "100px", borderRadius: "50%" }}
 						className='rounded'
-					/>
+					/> */}
+					<h2> Nails by Me</h2>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls='basic-navbar-nav' />
 				<Navbar.Collapse id='basic-navbar-nav'>
@@ -22,7 +23,7 @@ const MyNavBar = () => {
 						<Nav.Link href='/about'>About</Nav.Link>
 						<Nav.Link href='/gallery'>Gallery</Nav.Link>
 						<Nav.Link href='/services'>Services</Nav.Link>
-						<Nav.Link href='/faqs'>Faqs</Nav.Link>
+						{/* <Nav.Link href='/faqs'>Faqs</Nav.Link> */}
 					</Nav>
 				</Navbar.Collapse>
 			</Container>
