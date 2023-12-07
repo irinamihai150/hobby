@@ -6,10 +6,10 @@ import NailFaqs from "./NailFaqs"
 const Home = () => {
 	const mainImagePath = "/images/mainimage.jpg"
 	return (
-		<Container>
-			<Card>
-				<Image src={mainImagePath} fluid></Image>
-				<Card.Body>
+		<Container className='p-4'>
+			<Card className='border-0'>
+				<Image src={mainImagePath} fluid className='rounded'></Image>
+				<Card.Body className='p-4 shadow-lg'>
 					About Me Welcome to [Your Name]'s BIAB Nail Studio, where strength
 					meets beauty in the world of nail care. I am more than just a nail
 					artist – I am a dedicated professional committed to enhancing the

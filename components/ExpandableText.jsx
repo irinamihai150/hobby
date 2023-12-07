@@ -1,12 +1,13 @@
 import React, { useState } from "react"
 import { Card, Button } from "react-bootstrap"
 
-const ExpandableText = ({ text, maxlength }) => {
+const ExpandableText = ({ text, maxlength, onExpandToggle }) => {
 	const [isExpanded, setIsExpanded] = useState(false)
 	const truncatedText = isExpanded ? text : text.slice(0, maxlength)
 
 	const toggleExpansion = () => {
 		setIsExpanded(!isExpanded)
+		onExpandToggle(!isExpanded)
 	}
 	// console.log("Render ExpandableText")
 	return (

@@ -4,8 +4,9 @@ import { Image, Navbar, Nav, Container } from "react-bootstrap"
 const MyNavBar = () => {
 	const logoPath = "/images/logo.jpg"
 	return (
-		<Navbar expand='lg'>
-			<Container>
+		<Navbar expand='lg' className='custom-navbar'>
+			<h2 style={{ padding: "2rem" }}> Nails by Me</h2>
+			<Container className='ms-auto'>
 				<Navbar.Brand>
 					{/* <Image
 						src={logoPath}
@@ -14,7 +15,7 @@ const MyNavBar = () => {
 						style={{ width: "100px", height: "100px", borderRadius: "50%" }}
 						className='rounded'
 					/> */}
-					<h2> Nails by Me</h2>
+					{/* <h2> Nails by Me</h2> */}
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls='basic-navbar-nav' />
 				<Navbar.Collapse id='basic-navbar-nav'>

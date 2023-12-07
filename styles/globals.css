@@ -1,10 +1,11 @@
-/* body {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh; 
-	margin: 0;
-}
 
-main {
-	flex: 1;
-} */
+body {
+	font-family: "Gill Sans Extrabold", sans-serif;
+	font-size: 20px;
+}
+.custom-navbar h2 {
+	font-size: 2.5rem;
+}
+.custom-navbar {
+	font-size: 2rem;
+}

@@ -5,7 +5,7 @@ import nailFaqs from "@/data/nailFaqs"
 const NailFaqs = () => {
 	return (
 		<Container border='0' className='mb-4'>
-			<h1 className='mb-4'>Frequently asked questions</h1>
+			<h2 className='mb-4'>Frequently asked questions</h2>
 			<Accordion defaultActiveKey='0' flush>
 				{nailFaqs.map((faq, index) => (
 					<Accordion.Item key={index}>

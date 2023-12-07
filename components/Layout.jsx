@@ -8,7 +8,6 @@ const Layout = ({ children }) => {
 	let currentYear = new Date().getFullYear()
 	const backgroundStyle = {
 		backgroundImage: 'url("../images/image2.jpeg")',
-		// backgroundColor: "red",
 		backgroundSize: "cover",
 		backgroundPosition: "center",
 		backgroundRepeat: "no-repeat",
@@ -18,10 +17,10 @@ const Layout = ({ children }) => {
 		<div
 			style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
 		>
-			<header style={backgroundStyle}>
+			<header style={{ backgroundColor: "#FCD181" }}>
 				<MyNavBar />
 			</header>
-			<main style={{ flex: "1" }}>{children}</main>
+			<main>{children}</main>
 
 			<footer
 				style={{
@@ -33,7 +32,7 @@ const Layout = ({ children }) => {
 				<Container>
 					<Row className='align-items-center'>
 						<Col xs={12} md={3}>
-							<div className='text-center py-3'>
+							<div className='text-center py-3 fw-bold'>
 								{currentYear} Nail Art &copy; All Rights Reserved
 							</div>
 						</Col>
@@ -43,7 +42,7 @@ const Layout = ({ children }) => {
 							md={6}
 							className='d-flex justify-content-center align-items-center'
 						>
-							<h5>Connect With Us</h5>
+							<h5 className='fw-bold'>Connect with Me</h5>
 							<div>
 								<a
 									href='https://www.instagram.com/'
