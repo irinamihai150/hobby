@@ -14,7 +14,9 @@ const About = () => {
 							alt='Card image'
 						/> */}
 						<Card.Body>
-							<Card.Title style={{ fontSize: "1.5em" }}>My Story</Card.Title>
+							<Card.Title style={{ fontSize: "2em", textAlign: "center" }}>
+								My Story
+							</Card.Title>
 							<Card.Text className='shadow-lg p-3'>
 								Welcome to our salon! I'm thrilled to introduce our talented
 								team of nail artists who share a passion for creativity and
