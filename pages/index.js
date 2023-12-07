@@ -1,9 +1,6 @@
 import Head from "next/head"
 // import styles from "@/styles/Home.module.css"
-import Gallery from "../components/Gallery"
-import Services from "../components/Services"
 import About from "../components/About"
-import Testimonials from "../components/Testimonials"
 import Layout from "@/components/Layout"
 
 export default function Home() {
@@ -15,9 +12,6 @@ export default function Home() {
 			<main>
 				<Layout>
 					<About />
-					{/* <Gallery />
-					<Services />
-					<Testimonials /> */}
 				</Layout>
 			</main>
 		</>
