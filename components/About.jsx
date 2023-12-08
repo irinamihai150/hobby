@@ -3,7 +3,7 @@ import { Container, Card, Row, Col, Button } from "react-bootstrap"
 
 const About = () => {
 	return (
-		<Container className='mt-4'>
+		<Container className='mt-4 mb-4'>
 			<Row>
 				<Col>
 					<Card border='0'>
@@ -18,21 +18,23 @@ const About = () => {
 								My Story
 							</Card.Title>
 							<Card.Text className='shadow-lg p-3'>
-								Welcome to our salon! I'm thrilled to introduce our talented
-								team of nail artists who share a passion for creativity and
-								precision. We take pride in turning every nail session into an
-								artful experience, making sure you leave with stunning nails
-								that speak volumes about your individuality. Our commitment to
-								excellence is reflected in our continuous exploration of the
-								latest trends and innovations in the nail industry. From classic
-								styles to avant-garde designs, we offer a diverse range of
-								services tailored to suit your preferences. At our salon, we
-								prioritize not just the aesthetics but also your comfort and
-								relaxation. Our inviting ambiance and personalized approach aim
-								to make every visit a delightful escape. Thank you for choosing
-								us as your beauty destination—we can't wait to transform your
-								nails into works of art!
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
+								distinctio excepturi non, saepe deserunt ipsa sed exercitationem
+								repellendus cum aliquid at. Quo laborum, earum accusamus fugiat
+								consequatur perferendis iusto corrupti praesentium ipsam
+								pariatur, magnam aspernatur quia a suscipit molestiae ullam
+								culpa totam sunt. Sint ad quos quia culpa soluta, aliquam
+								quisquam id explicabo quasi repellat architecto tempore error
+								voluptates quidem laborum omnis officia fugiat sit facilis
+								accusamus eveniet. Maiores eius facilis dolorem, dicta autem
+								molestiae voluptas ipsa, delectus accusantium ex blanditiis
+								temporibus reprehenderit reiciendis pariatur unde ipsum beatae
+								ut distinctio sit alias nulla esse! Iusto dolore obcaecati
+								commodi iste voluptates!
 							</Card.Text>
+							<Card.Title style={{ fontSize: "2em", textAlign: "center" }}>
+								My Mission
+							</Card.Title>
 
 							<Card.Text className='shadow-lg p-3'>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -49,6 +51,9 @@ const About = () => {
 								laboriosam, optio quisquam libero iusto ducimus repudiandae
 								aliquid mollitia animi?
 							</Card.Text>
+							<Card.Title style={{ fontSize: "2em", textAlign: "center" }}>
+								My Values
+							</Card.Title>
 							<Card.Text className='shadow-lg p-3'>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit.
 								Voluptatem recusandae maiores repudiandae unde ea, doloremque

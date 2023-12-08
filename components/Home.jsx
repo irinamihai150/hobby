@@ -5,39 +5,47 @@ import NailFaqs from "./NailFaqs"
 
 const Home = () => {
 	const mainImagePath = "/images/mainimage.jpg"
+	// const cardStyle = {
+	// 	boxShadow: "0 8px 16px rgba(255, 255, 0, 0.2)",
+	// }
+
 	return (
 		<Container className='p-4'>
-			<Card className='border-0'>
+			<Card
+				className='border-0'
+				// style={cardStyle}
+			>
+				<h3 className='mb-4 p-3'>
+					We believe beauty is personal. Welcome to a space where your unique
+					style and individuality are celebrated. I am dedicated to crafting
+					personalized nail designs that reflect your personality and enhance
+					your natural beauty.
+				</h3>
 				<Image src={mainImagePath} fluid className='rounded'></Image>
-				<Card.Body className='p-4 shadow-lg'>
-					About Me Welcome to [Your Name]'s BIAB Nail Studio, where strength
-					meets beauty in the world of nail care. I am more than just a nail
-					artist – I am a dedicated professional committed to enhancing the
-					natural beauty of your nails with BIAB. My Mission At [Your Name]'s
-					BIAB Nail Studio, my mission is to provide exceptional nail services
-					that not only beautify but also strengthen your natural nails. I
-					believe in the transformative power of BIAB, creating a lasting and
-					beautiful foundation for your unique style. My Values Strength and
-					Beauty: I specialize in BIAB, a revolutionary technique that combines
-					strength and beauty. Your nails deserve to be both durable and
-					stunning, and I'm here to deliver just that. Quality: I am committed
-					to using high-quality BIAB products and techniques to ensure your
-					nails not only look fantastic but also remain healthy and resilient.
-					Client Satisfaction: Your satisfaction is my priority. I strive to
-					create a welcoming and comfortable environment where you can relax and
-					leave with confidence in your BIAB-enhanced nails. Innovation: I stay
-					abreast of the latest developments in BIAB techniques, ensuring you
-					receive the best and most innovative nail care services available. Who
-					I Am Founded in [Year], [Your Name]'s BIAB Nail Studio has been a
-					trusted destination for individuals seeking professional and
-					specialized BIAB services. As a solo nail artist focused on BIAB, I am
-					dedicated to delivering top-notch services tailored to your unique
-					style. Whether you're looking for a BIAB overlay, maintenance, or
-					exploring the benefits of BIAB for natural nail growth, [Your Name]'s
-					BIAB Nail Studio is here to elevate your nail experience. Discover the
-					strength and beauty that lies at your fingertips with [Your Name]'s
-					BIAB Nail Studio – where each nail tells a story of resilience and
-					elegance.
+				<Card.Body className='p-4 shadow-lg mb-4'>
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, nisi
+					repudiandae! Temporibus nisi nemo quis facilis dolor repellat a
+					placeat totam, eos ab libero quas, quod tempora distinctio adipisci
+					quisquam eius? Atque, voluptas? Corporis possimus dolore consectetur
+					deleniti eius! Placeat repudiandae repellat perferendis! Unde nihil,
+					iure officia obcaecati delectus doloremque. Doloribus, dolore.
+					Suscipit distinctio rem nostrum, nisi dolor ex velit, rerum numquam
+					minus ducimus quaerat praesentium, ipsum aliquid saepe eius!
+					Reiciendis odio neque similique magni dolores laudantium corporis cum
+					eius nobis natus ad, perferendis non suscipit itaque sunt veritatis
+					doloremque quae nihil praesentium. Fugit excepturi beatae nostrum
+					dolore rerum nihil magnam dicta inventore! Nam tempora dolor rem
+					necessitatibus quod maxime, ipsam accusantium consectetur. Facere
+					accusamus provident vel, veniam quam unde ducimus id. Doloremque, ad!
+					Molestias, dolores minima deserunt voluptas quaerat, nisi ratione
+					eveniet illum, explicabo rerum fugiat reiciendis error nobis
+					consequuntur dolorem vitae accusantium eum veritatis ipsa sunt.
+					Voluptatum, ipsum sequi! Reiciendis quam facere ex veniam nesciunt
+					excepturi aut odit assumenda non repellendus, aspernatur
+					necessitatibus vel in facilis harum nulla quaerat eligendi at numquam
+					culpa. Porro cupiditate laborum voluptate perferendis quia quidem
+					atque maxime libero quo aspernatur reiciendis dolorem delectus quas
+					illo enim, nobis odio, necessitatibus corporis eum? Consequatur, sit.
 				</Card.Body>
 			</Card>
 			<NailFaqs />

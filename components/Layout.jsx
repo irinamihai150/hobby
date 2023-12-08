@@ -7,17 +7,20 @@ import { FaInstagram, FaPinterest } from "react-icons/fa"
 const Layout = ({ children }) => {
 	let currentYear = new Date().getFullYear()
 	const backgroundStyle = {
-		backgroundImage: 'url("../images/image2.jpeg")',
+		backgroundImage: 'url("../images/IMG_0634.JPG")',
 		backgroundSize: "cover",
 		backgroundPosition: "center",
 		backgroundRepeat: "no-repeat",
 		backgroundColor: "rgba(255, 255, 255, 0.8)",
+		// opacity: 0.8,
 	}
 	return (
 		<div
 			style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
 		>
-			<header style={{ backgroundColor: "#FCD181" }}>
+			<header
+			//  style={{ backgroundColor: "black" }}
+			>
 				<MyNavBar />
 			</header>
 			<main>{children}</main>
