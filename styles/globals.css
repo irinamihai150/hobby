@@ -2,9 +2,65 @@ body {
 	font-family: "Gill Sans Extrabold", sans-serif;
 	font-size: 20px;
 }
+/* navbar component */
 .custom-navbar h2 {
 	font-size: 2.5rem;
 }
 .custom-navbar {
 	font-size: 2rem;
+}
+
+/* testimonial component */
+.testimonial-container {
+	margin: 0 auto;
+	padding: 1.25rem;
+	border: 2px solid #ddd;
+	border-radius: 8px;
+	background-color: #f8f9fa;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* shared keyframes between home and testimonials component */
+@keyframes slideIn {
+	from {
+		transform: translateY(-50px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.animated-text {
+	animation: slideIn 1s ease-in-out;
+}
+
+@keyframes fadeInScale {
+	from {
+		opacity: 0;
+		transform: scale(0.8);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.animatedText {
+	animation: fadeInScale 1s ease-in-out;
+}
+
+@keyframes zoomIn {
+	from {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.animatedLargeText {
+	animation: zoomIn 1s ease-in-out;
 }

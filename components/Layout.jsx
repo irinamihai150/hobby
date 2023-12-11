@@ -1,4 +1,3 @@
-// components/Layout.jsx
 import MyNavBar from "./MyNavBar.jsx"
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
@@ -18,9 +17,7 @@ const Layout = ({ children }) => {
 		<div
 			style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
 		>
-			<header
-			//  style={{ backgroundColor: "black" }}
-			>
+			<header style={{ ...backgroundStyle }}>
 				<MyNavBar />
 			</header>
 			<main>{children}</main>
@@ -45,8 +42,8 @@ const Layout = ({ children }) => {
 							md={6}
 							className='d-flex justify-content-center align-items-center'
 						>
-							<h5 className='fw-bold'>Connect with Me</h5>
 							<div>
+								<h5 className='fw-bold'>Connect with Me</h5>
 								<a
 									href='https://www.instagram.com/'
 									target='_blank'
@@ -54,7 +51,7 @@ const Layout = ({ children }) => {
 								>
 									<FaInstagram
 										size={30}
-										style={{ margin: "0 10px", color: "pink" }}
+										style={{ margin: "10px 10px", color: "black" }}
 									/>
 								</a>
 								<a
@@ -62,7 +59,7 @@ const Layout = ({ children }) => {
 									target='_blank'
 									rel='noopener noreferrer'
 								>
-									<FaPinterest size={30} style={{ color: "pink" }} />
+									<FaPinterest size={30} style={{ color: "black" }} />
 								</a>
 							</div>
 						</Col>

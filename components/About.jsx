@@ -5,6 +5,20 @@ const About = () => {
 	return (
 		<Container className='mt-4 mb-4'>
 			<Row>
+				<Card.Title style={{ fontSize: "2em", textAlign: "center" }}>
+					Watch me
+				</Card.Title>
+				<iframe
+					width='560'
+					height='315'
+					src='https://www.youtube.com/embed/WBqnnX4hcP8?si=Qg8oR6o6l9BZSxiU'
+					title='YouTube video player'
+					frameborder='0'
+					allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+					allowfullscreen
+				></iframe>
+			</Row>
+			<Row>
 				<Col>
 					<Card border='0'>
 						{/* <Card.Img

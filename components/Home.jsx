@@ -15,14 +15,22 @@ const Home = () => {
 				className='border-0'
 				// style={cardStyle}
 			>
-				<h3 className='mb-4 p-3'>
+				<h2
+					className='mb-4 p-3 animatedText'
+					style={{
+						// backgroundImage: `url(${mainImagePath})`,
+						backgroundSize: "cover",
+						backgroundPosition: "center",
+						// color: "white",
+					}}
+				>
 					We believe beauty is personal. Welcome to a space where your unique
 					style and individuality are celebrated. I am dedicated to crafting
 					personalized nail designs that reflect your personality and enhance
 					your natural beauty.
-				</h3>
-				<Image src={mainImagePath} fluid className='rounded'></Image>
-				<Card.Body className='p-4 shadow-lg mb-4'>
+				</h2>
+				{/* <Image src={mainImagePath} fluid className='rounded'></Image> */}
+				<Card.Body className='p-4 shadow-lg mb-4 animatedLargeText'>
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, nisi
 					repudiandae! Temporibus nisi nemo quis facilis dolor repellat a
 					placeat totam, eos ab libero quas, quod tempora distinctio adipisci

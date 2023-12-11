@@ -1,6 +1,5 @@
 import Head from "next/head"
-// import styles from "@/styles/Home.module.css"
-import About from "../components/About"
+import HomeContent from "../components/Home"
 import Layout from "@/components/Layout"
 
 export default function Home() {
@@ -11,7 +10,7 @@ export default function Home() {
 			</Head>
 			<main>
 				<Layout>
-					<Home />
+					<HomeContent />
 				</Layout>
 			</main>
 		</>

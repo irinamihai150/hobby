@@ -5,7 +5,7 @@ import { fakeTestimonials } from "../data/fakeTestimonials"
 const Testimonials = () => {
 	return (
 		<Container>
-			<h2 className='mt-4'>Testimonials</h2>
+			<h2 className='mt-4 mb-4 text-center animated-text'>Testimonials</h2>
 			<Row className='testimonial-container'>
 				{fakeTestimonials.map((testimonial) => (
 					<Col key={testimonial.id} lg={4} className='mb-4'>
