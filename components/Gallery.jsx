@@ -1,38 +1,3 @@
-// import React from "react"
-// import { Container, Row, Col, Card } from "react-bootstrap"
-// import { fakeData } from "../data/fakeData"
-// import ImageGallery from "react-image-gallery"
-
-// const Gallery = () => {
-// 	return (
-// 		<Container>
-// 			<h2 className='mt-4'>Gallery</h2>
-// 			{fakeData.map((category) => (
-// 				<div key={category.category} className='mt-4'>
-// 					<h3>{category.category}</h3>
-// 					<div className='gallery-container d-flex'>
-// 						{category.items.map((item) => (
-// 							<Card key={item.id} className='m-2' style={{ flex: "1 0 200px" }}>
-// 								<Card.Img
-// 									variant='top'
-// 									src={item.image}
-// 									alt={item.description}
-// 									style={{ width: "100%", height: "85%", objectFit: "cover" }}
-// 								/>
-// 								<Card.Body>
-// 									<Card.Text>{item.description}</Card.Text>
-// 								</Card.Body>
-// 							</Card>
-// 						))}
-// 					</div>
-// 				</div>
-// 			))}
-// 		</Container>
-// 	)
-// }
-
-// export default Gallery
-
 import React from "react"
 import { fakeData } from "../data/fakeData"
 import ImageGallery from "react-image-gallery"
@@ -44,6 +9,8 @@ const Gallery = () => {
 			original: item.image,
 			thumbnail: item.image,
 			description: item.description,
+			caption: item.caption,
+			// caption: `Category: ${category.category}`,
 		}))
 		return accumulator.concat(categoryItems)
 	}, [])
@@ -52,19 +19,24 @@ const Gallery = () => {
 		original: {
 			width: "300px",
 			height: "200px",
+			borderRadius: "8px",
+			boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
 		},
 		thumbnail: {
 			width: "100px",
 			height: "75px",
+			borderRadius: "4px",
 		},
 	}
 
 	return (
-		<Container className='p-4'>
+		<Container className='p-4 container-gallery'>
 			<ImageGallery
 				items={galleryItems}
 				styles={imageStyles}
 				showFullscreenButton={false}
+				showBullets={true}
+				showThumbnails={false}
 			/>
 		</Container>
 	)

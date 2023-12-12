@@ -8,9 +8,9 @@ const NailFaqs = () => {
 			<h2 className='mt-4 mb-4 text-center animated-text'>
 				Frequently asked questions
 			</h2>
-			<Accordion defaultActiveKey='0' flush>
+			<Accordion flush>
 				{nailFaqs.map((faq, index) => (
-					<Accordion.Item key={index}>
+					<Accordion.Item key={index} eventKey={index.toString()}>
 						<Accordion.Header
 							style={{
 								backgroundColor: "#E2725B",

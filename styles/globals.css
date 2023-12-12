@@ -17,7 +17,7 @@ body {
 	border: 2px solid #ddd;
 	border-radius: 8px;
 	background-color: #f8f9fa;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 /* shared keyframes between home and testimonials component */
 @keyframes slideIn {
@@ -33,6 +33,7 @@ body {
 
 .animated-text {
 	animation: slideIn 1s ease-in-out;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes fadeInScale {
@@ -63,4 +64,25 @@ body {
 
 .animatedLargeText {
 	animation: zoomIn 1s ease-in-out;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* galery compoenet */
+.card:hover {
+	transform: scale(1.05);
+	transition: transform 0.3s ease-in-out;
+}
+.container-gallery {
+	border: 2px solid #ddd;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+	padding: 20px;
+}
+
+/* about component */
+
+.card-about {
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }

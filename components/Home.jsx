@@ -30,7 +30,7 @@ const Home = () => {
 					your natural beauty.
 				</h2>
 				{/* <Image src={mainImagePath} fluid className='rounded'></Image> */}
-				<Card.Body className='p-4 shadow-lg mb-4 animatedLargeText'>
+				<Card.Body className='p-4 mb-4 animatedLargeText'>
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, nisi
 					repudiandae! Temporibus nisi nemo quis facilis dolor repellat a
 					placeat totam, eos ab libero quas, quod tempora distinctio adipisci

@@ -3,7 +3,7 @@ import { Container, Card, Row, Col, Button } from "react-bootstrap"
 
 const About = () => {
 	return (
-		<Container className='mt-4 mb-4'>
+		<Container className='mt-4 mb-4 container-about'>
 			<Row>
 				<Card.Title style={{ fontSize: "2em", textAlign: "center" }}>
 					Watch me
@@ -31,7 +31,7 @@ const About = () => {
 							<Card.Title style={{ fontSize: "2em", textAlign: "center" }}>
 								My Story
 							</Card.Title>
-							<Card.Text className='shadow-lg p-3'>
+							<Card.Text className='p-3 card-about'>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
 								distinctio excepturi non, saepe deserunt ipsa sed exercitationem
 								repellendus cum aliquid at. Quo laborum, earum accusamus fugiat
@@ -50,7 +50,7 @@ const About = () => {
 								My Mission
 							</Card.Title>
 
-							<Card.Text className='shadow-lg p-3'>
+							<Card.Text className='p-3 card-about'>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit.
 								Deleniti, ipsam, aliquam quibusdam fugit consequuntur minus
 								asperiores et pariatur quidem beatae, facilis nesciunt obcaecati
@@ -68,7 +68,7 @@ const About = () => {
 							<Card.Title style={{ fontSize: "2em", textAlign: "center" }}>
 								My Values
 							</Card.Title>
-							<Card.Text className='shadow-lg p-3'>
+							<Card.Text className='p-3 card-about'>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit.
 								Voluptatem recusandae maiores repudiandae unde ea, doloremque
 								maxime veniam, non consectetur pariatur quibusdam dolorum
