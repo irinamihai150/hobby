@@ -2,6 +2,7 @@ import React from "react"
 import { Container, Card, Accordion } from "react-bootstrap"
 import nailFaqs from "@/data/nailFaqs"
 import { FaQuestionCircle } from "react-icons/fa"
+
 const NailFaqs = () => {
 	return (
 		<Container className='mb-4'>
@@ -22,13 +23,7 @@ const NailFaqs = () => {
 							</h3>
 						</Accordion.Header>
 						<Accordion.Body>
-							<Card
-								className='faq-item'
-								style={{
-									backgroundColor: "#FFC857",
-									borderColor: "#B7B7A4",
-								}}
-							>
+							<Card className='faq-item'>
 								<p className='p-3'>{faq.answer}</p>
 							</Card>
 						</Accordion.Body>

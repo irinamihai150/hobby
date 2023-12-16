@@ -1,34 +1,21 @@
 import MyNavBar from "./MyNavBar.jsx"
 import React from "react"
-import { Container, Row, Col } from "react-bootstrap"
-import { FaInstagram, FaPinterest } from "react-icons/fa"
+import { Container, Row, Col, Button } from "react-bootstrap"
+import { FaInstagram, FaPinterest, FaQuestionCircle } from "react-icons/fa"
+import HelpButton from "./HelpButton.jsx"
 
 const Layout = ({ children }) => {
 	let currentYear = new Date().getFullYear()
 	const backgroundStyle = {
-		backgroundImage: 'url("../images/IMG_0634.JPG")',
-		backgroundSize: "cover",
-		backgroundPosition: "center",
-		backgroundRepeat: "no-repeat",
-		backgroundColor: "rgba(255, 255, 255, 0.8)",
-		// opacity: 0.8,
+		backgroundColor: "purple",
 	}
 	return (
-		<div
-			style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
-		>
-			<header style={{ ...backgroundStyle }}>
+		<div>
+			<header>
 				<MyNavBar />
 			</header>
 			<main>{children}</main>
-
-			<footer
-				style={{
-					marginTop: "auto",
-					padding: "20px 0",
-					...backgroundStyle,
-				}}
-			>
+			<footer>
 				<Container>
 					<Row className='align-items-center'>
 						<Col xs={12} md={3}>
@@ -43,7 +30,7 @@ const Layout = ({ children }) => {
 							className='d-flex justify-content-center align-items-center'
 						>
 							<div>
-								<h5 className='fw-bold'>Connect with Me</h5>
+								<h5 className='fw-bold'>Follow Me</h5>
 								<a
 									href='https://www.instagram.com/'
 									target='_blank'
@@ -64,6 +51,7 @@ const Layout = ({ children }) => {
 							</div>
 						</Col>
 					</Row>
+					<HelpButton />
 				</Container>
 			</footer>
 		</div>

@@ -5,31 +5,15 @@ import NailFaqs from "./NailFaqs"
 
 const Home = () => {
 	const mainImagePath = "/images/mainimage.jpg"
-	// const cardStyle = {
-	// 	boxShadow: "0 8px 16px rgba(255, 255, 0, 0.2)",
-	// }
 
 	return (
 		<Container className='p-4'>
-			<Card
-				className='border-0'
-				// style={cardStyle}
-			>
-				<h2
-					className='mb-4 p-3 animatedText'
-					style={{
-						// backgroundImage: `url(${mainImagePath})`,
-						backgroundSize: "cover",
-						backgroundPosition: "center",
-						// color: "white",
-					}}
-				>
-					We believe beauty is personal. Welcome to a space where your unique
-					style and individuality are celebrated. I am dedicated to crafting
-					personalized nail designs that reflect your personality and enhance
-					your natural beauty.
-				</h2>
-				{/* <Image src={mainImagePath} fluid className='rounded'></Image> */}
+			<Card className='border-0'>
+				<p className='mb-4 p-3 animatedText'>
+					I am dedicated to crafting personalized nail designs that reflect your
+					personality and enhance your natural beauty.
+				</p>
+
 				<Card.Body className='p-4 mb-4 animatedLargeText'>
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, nisi
 					repudiandae! Temporibus nisi nemo quis facilis dolor repellat a
@@ -43,17 +27,7 @@ const Home = () => {
 					eius nobis natus ad, perferendis non suscipit itaque sunt veritatis
 					doloremque quae nihil praesentium. Fugit excepturi beatae nostrum
 					dolore rerum nihil magnam dicta inventore! Nam tempora dolor rem
-					necessitatibus quod maxime, ipsam accusantium consectetur. Facere
-					accusamus provident vel, veniam quam unde ducimus id. Doloremque, ad!
-					Molestias, dolores minima deserunt voluptas quaerat, nisi ratione
-					eveniet illum, explicabo rerum fugiat reiciendis error nobis
-					consequuntur dolorem vitae accusantium eum veritatis ipsa sunt.
-					Voluptatum, ipsum sequi! Reiciendis quam facere ex veniam nesciunt
-					excepturi aut odit assumenda non repellendus, aspernatur
-					necessitatibus vel in facilis harum nulla quaerat eligendi at numquam
-					culpa. Porro cupiditate laborum voluptate perferendis quia quidem
-					atque maxime libero quo aspernatur reiciendis dolorem delectus quas
-					illo enim, nobis odio, necessitatibus corporis eum? Consequatur, sit.
+					necessitatibus quod maxime, ipsam accusantium consectetur.
 				</Card.Body>
 			</Card>
 			<NailFaqs />

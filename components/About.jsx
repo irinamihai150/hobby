@@ -1,32 +1,33 @@
 import React from "react"
-import { Container, Card, Row, Col, Button } from "react-bootstrap"
+import { Container, Card, Row, Col } from "react-bootstrap"
 
 const About = () => {
 	return (
 		<Container className='mt-4 mb-4 container-about'>
 			<Row>
-				<Card.Title style={{ fontSize: "2em", textAlign: "center" }}>
-					Watch me
-				</Card.Title>
-				<iframe
-					width='560'
-					height='315'
-					src='https://www.youtube.com/embed/WBqnnX4hcP8?si=Qg8oR6o6l9BZSxiU'
-					title='YouTube video player'
-					frameborder='0'
-					allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-					allowfullscreen
-				></iframe>
-			</Row>
-			<Row>
-				<Col>
-					<Card border='0'>
-						{/* <Card.Img
-							className='rounded-circle'
+				<Row className='d-flex justify-content-center align-items-center'>
+					<Col className='text-center'>
+						<Card.Img
+							className='rounded'
 							variant='top'
 							src='/images/mainimage.jpg'
 							alt='Card image'
-						/> */}
+							style={{ width: "100%", height: "auto" }}
+						/>
+					</Col>
+					<Col>
+						<Card>
+							<h2>Get to know Irina</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+								eveniet libero velit, ipsa id facere delectus modi fugit commodi
+								molestias!
+							</p>
+						</Card>
+					</Col>
+				</Row>
+				<Col>
+					<Card border='0'>
 						<Card.Body>
 							<Card.Title style={{ fontSize: "2em", textAlign: "center" }}>
 								My Story
@@ -86,6 +87,20 @@ const About = () => {
 						</Card.Body>
 					</Card>
 				</Col>
+			</Row>
+			<Row>
+				<Card.Title style={{ fontSize: "2em", textAlign: "center" }}>
+					Watch me
+				</Card.Title>
+				<iframe
+					width='560'
+					height='315'
+					src='https://www.youtube.com/embed/WBqnnX4hcP8?si=Qg8oR6o6l9BZSxiU'
+					title='YouTube video player'
+					frameborder='0'
+					allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+					// allowfullscreen
+				></iframe>
 			</Row>
 		</Container>
 	)
