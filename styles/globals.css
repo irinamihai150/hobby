@@ -1,19 +1,41 @@
 body {
 	font-family: "Gill Sans Extrabold", sans-serif;
 	font-size: 20px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	animation: backgroundSlide 10s infinite;
 }
 /*  whole app */
-.app-container {
-	background-size: cover;
+.home-container {
+	/* background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	animation: backgroundSlide 30s;
+	animation: backgroundSlide 10s infinite; */
+}
+/* .home-container::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	animation: backgroundSlide 20s infinite;
+	background-size: cover;
+} */
+.home-background {
+	position: relative;
+	overflow: hidden;
 }
 
+.home-background::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	background-size: cover;
+	animation: backgroundSlide 20s infinite;
+}
 @keyframes backgroundSlide {
 	0% {
 		background-image: url("../public/images/IMG_0718.jpg");
@@ -49,6 +71,10 @@ body {
 	font-size: 2rem;
 } */
 
+/* header */
+header {
+	background-color: white;
+}
 /* testimonial component */
 .testimonial-container {
 	margin: 0 auto;
@@ -125,6 +151,19 @@ body {
 .card-about {
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
+.about-header {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.background-image {
+	width: 100%;
+	height: auto;
+}
+/* services */
+h2 {
+	font-size: 2.5rem;
+}
 
 /* footer */
 footer {
@@ -138,7 +177,15 @@ footer {
 	right: 20px;
 	z-index: 1000;
 }
-/* header */
-header {
-	background-color: white;
+/* contact-info */
+.email-link {
+	color: inherit;
+	text-decoration: none;
+}
+.list-group:hover {
+	background-color: #f5f5f5;
+}
+.contact-container {
+	background-color: #d2b48c;
+	minheight: "100vh";
 }

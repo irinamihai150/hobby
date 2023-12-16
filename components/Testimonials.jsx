@@ -1,15 +1,32 @@
 import React from "react"
-import { Container, Row, Col, Card } from "react-bootstrap"
+import { Container, Card } from "react-bootstrap"
+import Slider from "react-slick"
 import { fakeTestimonials } from "../data/fakeTestimonials"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 
 const Testimonials = () => {
+	const settings = {
+		// dots: true,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+	}
+
 	return (
 		<Container>
-			<h2 className='mt-4 mb-4 text-center animated-text'>Testimonials</h2>
-			<Row className='testimonial-container'>
+			<h2 className='mt-4 mb-4 text-center animated-text'>
+				What my clients say
+			</h2>
+			<Slider
+				{...settings}
+				style={{ backgroundColor: "rgba(255, 255, 255, 0.2)" }}
+				className='m-4'
+			>
 				{fakeTestimonials.map((testimonial) => (
-					<Col key={testimonial.id} lg={4} className='mb-4'>
-						<Card>
+					<div key={testimonial.id}>
+						<Card className='text-center'>
 							<Card.Body>
 								<Card.Text>{testimonial.testimonial}</Card.Text>
 								<Card.Text className='text-muted'>
@@ -17,9 +34,9 @@ const Testimonials = () => {
 								</Card.Text>
 							</Card.Body>
 						</Card>
-					</Col>
+					</div>
 				))}
-			</Row>
+			</Slider>
 		</Container>
 	)
 }

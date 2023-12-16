@@ -1,60 +1,62 @@
 import React from "react"
 import { fakeNailServiceData } from "../data/fakeNailServiceData"
-import { Container, Row, Col, Card, ListGroup, Button } from "react-bootstrap"
+import { Container, ListGroup, Button, Row, Col, Card } from "react-bootstrap"
 import ExpandableText from "./ExpandableText"
 
 const Services = () => {
-	const maxLength = 40
+	const maxLength = 100
+
 	return (
-		<div 
-		// style={{ backgroundColor: "#FFDFB9", minHeight: "100vh" }}
-		>
+		<div>
 			<Container>
-				<h3 className='mb-4 text-center'>Cancelation Policy</h3>
-				<Row>
-					<Col>
-						<h4 className='text-center'>
-							We ask you to give us 24 Hours notice if you need to cancel Your
-							appointment.
-						</h4>
-						<a
-							href='https://www.instagram.com/'
-							target='_blank'
-							rel='noopener noreferrer'
-						>
-							<Button variant='light' className='mx-auto d-block'>
-								Book Here
-							</Button>
-						</a>
+				<Row className='d-flex justify-content-center align-items-center position-relative'>
+					<Col className='text-center'>
+						<Card.Img
+							className='background-image'
+							variant='top'
+							src='/images/mainimage.jpg'
+							alt='Card image'
+							style={{ width: "100%", height: "auto" }}
+						/>
+					</Col>
+					<Col className='position-absolute text-center w-100'>
+						<h2 className='mb-4 about-header'>My services price list</h2>
+
+						<div className='text-center'>
+							<a
+								href='https://www.instagram.com/'
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<Button variant='secondary'>Book Here</Button>
+							</a>
+						</div>
 					</Col>
 				</Row>
+				<h3 className='about-header p-3'>
+					I ask you to give me 24 hours notice if you need to cancel your
+					appointment.
+				</h3>
 				{fakeNailServiceData.map((category) => (
 					<div key={category.category} className='mt-4'>
-						<h2>{category.category}</h2>
-						<Row className='card-about mb-2'>
+						<h2 className='text-center'>{category.category}</h2>
+						<ListGroup className='mb-2'>
 							{category.items.map((service, index) => (
-								<Col key={service.id} md={6}>
-									<ListGroup.Item className='mb-3'>
-										<Card style={{ margin: "1em" }}>
-											<Card.Body
-												style={{
-													height: "200px",
-													overflow: "hidden",
-													boxShadow: "0 2px 4px rgba(0, 0, 0, 0.5)",
-												}}
-											>
-												<Card.Title>{service.serviceName}</Card.Title>
-												<ExpandableText
-													text={service.description}
-													maxLength={maxLength}
-												/>
-												<Card.Text>Price: {service.price}</Card.Text>
-											</Card.Body>
-										</Card>
-									</ListGroup.Item>
-								</Col>
+								<ListGroup.Item
+									key={service.id}
+									className='border-0 list-group'
+								>
+									<div style={{ margin: "1em" }}>
+										<h5>{service.serviceName}</h5>
+										<ExpandableText
+											text={service.description}
+											maxLength={maxLength}
+										/>
+										<p>Price: {service.price}</p>
+									</div>
+								</ListGroup.Item>
 							))}
-						</Row>
+						</ListGroup>
 					</div>
 				))}
 			</Container>

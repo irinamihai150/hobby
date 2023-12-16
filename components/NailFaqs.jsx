@@ -5,19 +5,17 @@ import { FaQuestionCircle } from "react-icons/fa"
 
 const NailFaqs = () => {
 	return (
-		<Container className='mb-4'>
+		<Container
+			className='mb-4'
+			style={{ backgroundColor: "rgba(255, 255, 255, 0.2)" }}
+		>
 			<h2 className='mt-4 mb-4 text-center animated-text'>
 				Frequently asked questions
 			</h2>
 			<Accordion flush>
 				{nailFaqs.map((faq, index) => (
 					<Accordion.Item key={index} eventKey={index.toString()}>
-						<Accordion.Header
-							style={{
-								backgroundColor: "#E2725B",
-								color: "#fff",
-							}}
-						>
+						<Accordion.Header>
 							<h3>
 								{faq.question} <FaQuestionCircle className='ml-2' />
 							</h3>

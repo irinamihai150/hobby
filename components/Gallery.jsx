@@ -1,7 +1,7 @@
 import React from "react"
 import { fakeData } from "../data/fakeData"
 import ImageGallery from "react-image-gallery"
-import { Container } from "react-bootstrap"
+import { Container, Col, Card, Row } from "react-bootstrap"
 
 const Gallery = () => {
 	const galleryItems = fakeData.reduce((accumulator, category) => {
@@ -17,10 +17,11 @@ const Gallery = () => {
 
 	const imageStyles = {
 		original: {
-			width: "300px",
-			height: "200px",
+			width: "100%",
+			height: "auto",
 			borderRadius: "8px",
 			boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+			// marginTop:"20px"
 		},
 		thumbnail: {
 			width: "100px",
@@ -31,6 +32,21 @@ const Gallery = () => {
 
 	return (
 		<Container className='p-4 container-gallery'>
+			<Row className='d-flex justify-content-center align-items-center position-relative mb-4'>
+				<Col className='text-center'>
+					<Card.Img
+						className='background-image'
+						variant='top'
+						src='/images/mainimage.jpg'
+						alt='Card image'
+						style={{ width: "100%", height: "auto" }}
+					/>
+				</Col>
+				<Col className='position-absolute text-center w-100'>
+					<h2 className='mb-4 about-header'>Nail Art Gallery</h2>
+				</Col>
+			</Row>
+
 			<ImageGallery
 				items={galleryItems}
 				styles={imageStyles}

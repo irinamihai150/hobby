@@ -1,7 +1,7 @@
 import MyNavBar from "./MyNavBar.jsx"
 import React from "react"
-import { Container, Row, Col, Button } from "react-bootstrap"
-import { FaInstagram, FaPinterest, FaQuestionCircle } from "react-icons/fa"
+import { Container, Row, Col } from "react-bootstrap"
+import { FaInstagram, FaPinterest } from "react-icons/fa"
 import HelpButton from "./HelpButton.jsx"
 
 const Layout = ({ children }) => {

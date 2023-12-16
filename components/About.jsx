@@ -4,8 +4,8 @@ import { Container, Card, Row, Col } from "react-bootstrap"
 const About = () => {
 	return (
 		<Container className='mt-4 mb-4 container-about'>
-			<Row>
-				<Row className='d-flex justify-content-center align-items-center'>
+			<Row className='d-flex justify-content-center align-items-center'>
+				<Row className='d-flex justify-content-center align-items-center position-relative'>
 					<Col className='text-center'>
 						<Card.Img
 							className='rounded'
@@ -15,17 +15,14 @@ const About = () => {
 							style={{ width: "100%", height: "auto" }}
 						/>
 					</Col>
-					<Col>
-						<Card>
-							<h2>Get to know Irina</h2>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-								eveniet libero velit, ipsa id facere delectus modi fugit commodi
-								molestias!
-							</p>
-						</Card>
+					<Col className='position-absolute text-center w-100'>
+						{/* <h2 className='text-light'>Get to know Me</h2> */}
+						<h2 className='about-header'>
+							Friendly Nail Service at an Affordable Price
+						</h2>
 					</Col>
 				</Row>
+
 				<Col>
 					<Card border='0'>
 						<Card.Body>

@@ -6,7 +6,7 @@ export default function GalleryPage() {
 	return (
 		<>
 			<Head>
-				<title>About Us</title>
+				<title>Gallery</title>
 			</Head>
 			<Layout>
 				<Gallery />
