@@ -3,8 +3,8 @@ import { Navbar, Nav, Container } from "react-bootstrap"
 
 const MyNavBar = () => {
 	return (
-		<Navbar className='custom-navbar' expand='lg'>
-			<Container className='d-flex justify-content-between mt-1.5'>
+		<Navbar className='sticky-top' expand='lg'>
+			<Container>
 				<Navbar.Brand className='text-center fs-2'>Nail Art Jess</Navbar.Brand>
 				<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 				<Navbar.Collapse id='responsive-navbar-nav'>

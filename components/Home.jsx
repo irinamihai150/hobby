@@ -9,7 +9,7 @@ const Home = () => {
 		<div className='home-background'>
 			<Container className='home-container'>
 				<Row
-					className='mt-5 d-flex align-items-center justify-content-center'
+					className='mt-5 d-flex align-items-center justify-content-center '
 					style={{ height: "80vh" }}
 				>
 					<Col className='text-center'>
