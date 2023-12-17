@@ -4,12 +4,12 @@ import { Container, ListGroup, Button, Row, Col, Card } from "react-bootstrap"
 import ExpandableText from "./ExpandableText"
 
 const Services = () => {
-	const maxLength = 100
+	const maxLength = 150
 
 	return (
 		<div>
 			<Container>
-				<Row className='d-flex justify-content-center align-items-center position-relative'>
+				{/* <Row className='d-flex justify-content-center align-items-center position-relative'>
 					<Col className='text-center'>
 						<Card.Img
 							className='background-image'
@@ -28,11 +28,11 @@ const Services = () => {
 								target='_blank'
 								rel='noopener noreferrer'
 							>
-								<Button variant='secondary'>Book Here</Button>
+								<Button variant='light'>Book Here</Button>
 							</a>
 						</div>
 					</Col>
-				</Row>
+				</Row> */}
 				<h3 className='about-header p-3'>
 					I ask you to give me 24 hours notice if you need to cancel your
 					appointment.

@@ -35,83 +35,88 @@ const ContactForm = () => {
 	}
 
 	return (
-		<Container>
-			<ContactInfo />
-			<Form onSubmit={onSubmit}>
-				<Row className='mb-3'>
-					<Form.Group as={Col} controlId='formName'>
-						<Form.Label>
-							<strong>Name:</strong>
-						</Form.Label>
-						<Form.Control
-							isInvalid={touched.name && !values.name}
-							type='text'
-							name='name'
-							value={values.name}
-							onChange={handleChange}
-							onBlur={onBlur}
-							required
-						/>
-					</Form.Group>
-				</Row>
-				<Row className='mb-3'>
-					<Form.Group as={Col} controlId='formEmail'>
-						<Form.Label>
-							<strong>Email:</strong>
-						</Form.Label>
-						<Form.Control
-							type='email'
-							name='email'
-							value={values.email}
-							onChange={handleChange}
-							onBlur={onBlur}
-							required
-						/>
-					</Form.Group>
-				</Row>
-				<Row className='mb-3'>
-					<Form.Group as={Col} controlId='formMessage'>
-						<Form.Label>
-							<strong>Subject:</strong>
-						</Form.Label>
-						<Form.Control
-							type='text'
-							rows={3}
-							name='subject'
-							value={values.subject}
-							onChange={handleChange}
-							onBlur={onBlur}
-							required
-						/>
-					</Form.Group>
-				</Row>
-				<Row className='mb-3'>
-					<Form.Group as={Col} controlId='formMessage'>
-						<Form.Label>
-							<strong>Message:</strong>
-						</Form.Label>
-						<Form.Control
-							as='textarea'
-							rows={3}
-							name='message'
-							value={values.message}
-							onChange={handleChange}
-							onBlur={onBlur}
-							required
-						/>
-					</Form.Group>
-				</Row>
-				<Button
-					variant='outline'
-					type='submit'
-					disabled={!values.name || !values.email || !values.message}
-					onClick={onSubmit}
-					// isLoading={isLoading}
-				>
-					Submit
-				</Button>
-			</Form>
-		</Container>
+		<div>
+			<Container className='testimonial-container'>
+				<ContactInfo />
+				<h2 className='text-center mt-2'>
+					<strong>Contact Me</strong>
+				</h2>
+				<Form onSubmit={onSubmit}>
+					<Row className='mb-3'>
+						<Form.Group as={Col} controlId='formName'>
+							<Form.Label>
+								<strong>Name:</strong>
+							</Form.Label>
+							<Form.Control
+								isInvalid={touched.name && !values.name}
+								type='text'
+								name='name'
+								value={values.name}
+								onChange={handleChange}
+								onBlur={onBlur}
+								required
+							/>
+						</Form.Group>
+					</Row>
+					<Row className='mb-3'>
+						<Form.Group as={Col} controlId='formEmail'>
+							<Form.Label>
+								<strong>Email:</strong>
+							</Form.Label>
+							<Form.Control
+								type='email'
+								name='email'
+								value={values.email}
+								onChange={handleChange}
+								onBlur={onBlur}
+								required
+							/>
+						</Form.Group>
+					</Row>
+					<Row className='mb-3'>
+						<Form.Group as={Col} controlId='formMessage'>
+							<Form.Label>
+								<strong>Subject:</strong>
+							</Form.Label>
+							<Form.Control
+								type='text'
+								rows={3}
+								name='subject'
+								value={values.subject}
+								onChange={handleChange}
+								onBlur={onBlur}
+								required
+							/>
+						</Form.Group>
+					</Row>
+					<Row className='mb-3'>
+						<Form.Group as={Col} controlId='formMessage'>
+							<Form.Label>
+								<strong>Message:</strong>
+							</Form.Label>
+							<Form.Control
+								as='textarea'
+								rows={3}
+								name='message'
+								value={values.message}
+								onChange={handleChange}
+								onBlur={onBlur}
+								required
+							/>
+						</Form.Group>
+					</Row>
+					<Button
+						variant='outline'
+						type='submit'
+						disabled={!values.name || !values.email || !values.message}
+						onClick={onSubmit}
+						// isLoading={isLoading}
+					>
+						Submit
+					</Button>
+				</Form>
+			</Container>
+		</div>
 	)
 }
 

@@ -3,32 +3,43 @@ import { Container, Card, Row, Col } from "react-bootstrap"
 
 const About = () => {
 	return (
-		<Container className='mt-4 mb-4 container-about'>
+		<Container className='container-about testimonial-container'>
 			<Row className='d-flex justify-content-center align-items-center'>
-				<Row className='d-flex justify-content-center align-items-center position-relative'>
-					<Col className='text-center'>
+				<Row className='mb-5'>
+					<Col md={8}>
 						<Card.Img
-							className='rounded'
+							className='rounded-circle'
 							variant='top'
-							src='/images/mainimage.jpg'
+							src='/images/manicure.jpg'
 							alt='Card image'
-							style={{ width: "100%", height: "auto" }}
+							style={{ width: "80%", height: "auto" }}
 						/>
 					</Col>
-					<Col className='position-absolute text-center w-100'>
-						{/* <h2 className='text-light'>Get to know Me</h2> */}
-						<h2 className='about-header'>
-							Friendly Nail Service at an Affordable Price
-						</h2>
+					<Col className='mt-5'>
+						<h3 className='text-center'> Get to know me</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nam
+							debitis, non alias voluptate odio dolor perspiciatis dolore,
+							maxime deleniti, natus quis vitae reiciendis sequi! Reprehenderit
+							qui ad ea autem.
+						</p>
 					</Col>
 				</Row>
 
 				<Col>
+					<Row className='mb-4'>
+						<Card.Title className='fs-1 text-center mb-3'>Watch me</Card.Title>
+						<iframe
+							width='560'
+							height='315'
+							src='https://www.youtube.com/embed/WBqnnX4hcP8?si=Qg8oR6o6l9BZSxiU'
+							title='YouTube video player'
+							allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+						></iframe>
+					</Row>
 					<Card border='0'>
 						<Card.Body>
-							<Card.Title style={{ fontSize: "2em", textAlign: "center" }}>
-								My Story
-							</Card.Title>
+							<Card.Title className='text-center fs-1'>My Story</Card.Title>
 							<Card.Text className='p-3 card-about'>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
 								distinctio excepturi non, saepe deserunt ipsa sed exercitationem
@@ -44,9 +55,7 @@ const About = () => {
 								ut distinctio sit alias nulla esse! Iusto dolore obcaecati
 								commodi iste voluptates!
 							</Card.Text>
-							<Card.Title style={{ fontSize: "2em", textAlign: "center" }}>
-								My Mission
-							</Card.Title>
+							<Card.Title className='fs-1 text-center'>My Mission</Card.Title>
 
 							<Card.Text className='p-3 card-about'>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -63,41 +72,9 @@ const About = () => {
 								laboriosam, optio quisquam libero iusto ducimus repudiandae
 								aliquid mollitia animi?
 							</Card.Text>
-							<Card.Title style={{ fontSize: "2em", textAlign: "center" }}>
-								My Values
-							</Card.Title>
-							<Card.Text className='p-3 card-about'>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Voluptatem recusandae maiores repudiandae unde ea, doloremque
-								maxime veniam, non consectetur pariatur quibusdam dolorum
-								facilis exercitationem itaque libero nihil consequuntur. Iure
-								nam possimus ab, ullam error eius delectus dolores architecto,
-								veritatis nulla provident placeat explicabo assumenda saepe
-								quidem, harum voluptatem libero laborum? Voluptatum consequuntur
-								debitis amet, sed voluptatem, atque temporibus nisi blanditiis
-								aperiam est saepe illo dolore? Tempora cupiditate suscipit
-								assumenda qui eius. Eveniet odit quis ad beatae doloremque
-								aliquam. Voluptates repellat cupiditate eos modi. Nemo tempore
-								quia eum fugit tenetur animi accusantium beatae facere ratione
-								enim ab eius, ducimus est rerum!
-							</Card.Text>
 						</Card.Body>
 					</Card>
 				</Col>
-			</Row>
-			<Row>
-				<Card.Title style={{ fontSize: "2em", textAlign: "center" }}>
-					Watch me
-				</Card.Title>
-				<iframe
-					width='560'
-					height='315'
-					src='https://www.youtube.com/embed/WBqnnX4hcP8?si=Qg8oR6o6l9BZSxiU'
-					title='YouTube video player'
-					frameborder='0'
-					allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-					// allowfullscreen
-				></iframe>
 			</Row>
 		</Container>
 	)

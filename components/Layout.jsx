@@ -11,11 +11,11 @@ const Layout = ({ children }) => {
 	}
 	return (
 		<div>
-			<header>
+			<header style={{ backgroundColor: "#EBE9EB" }}>
 				<MyNavBar />
 			</header>
 			<main>{children}</main>
-			<footer>
+			<footer style={{ backgroundColor: "#EBE9EB" }}>
 				<Container>
 					<Row className='align-items-center'>
 						<Col xs={12} md={3}>

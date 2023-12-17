@@ -1,25 +1,19 @@
 body {
 	font-family: "Gill Sans Extrabold", sans-serif;
 	font-size: 20px;
+	font-weight: bold;
+}
+h1 {
+	font-size: 6em;
+}
+h2 {
+	font-size: 4em;
+}
+header {
+	height: 6em;
 }
 /*  whole app */
-.home-container {
-	/* background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	animation: backgroundSlide 10s infinite; */
-}
-/* .home-container::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: -1;
-	animation: backgroundSlide 20s infinite;
-	background-size: cover;
-} */
+
 .home-background {
 	position: relative;
 	overflow: hidden;
@@ -40,10 +34,10 @@ body {
 	0% {
 		background-image: url("../public/images/IMG_0718.jpg");
 	}
-	33% {
+	/* 33% {
 		background-image: url("../public/images/IMG_0719.jpg");
-	}
-	66% {
+	} */
+	50% {
 		background-image: url("../public/images/IMG_0720.jpg");
 	}
 	100% {
@@ -60,7 +54,7 @@ body {
 		0,
 		0,
 		0,
-		0.5
+		0.3
 	); /* Adjust the opacity (last parameter) */
 }
 /* navbar component */
@@ -148,9 +142,6 @@ header {
 
 /* about component */
 
-.card-about {
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-}
 .about-header {
 	font-size: 2rem;
 	font-weight: bold;
@@ -164,7 +155,18 @@ header {
 h2 {
 	font-size: 2.5rem;
 }
-
+/* testimonial */
+.testimonial-container {
+	background-image: url("/images/background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: auto;
+}
+.card-about {
+	/* background: rgba(255, 255, 255, 0.3); */
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
 /* footer */
 footer {
 	background-color: white;
@@ -185,7 +187,8 @@ footer {
 .list-group:hover {
 	background-color: #f5f5f5;
 }
-.contact-container {
-	background-color: #d2b48c;
-	minheight: "100vh";
+
+.contact-background {
+	background-color: beige;
+	min-height: "100vh";
 }

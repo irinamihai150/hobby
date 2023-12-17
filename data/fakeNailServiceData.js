@@ -2,6 +2,7 @@
 export const fakeNailServiceData = [
 	{
 		category: "Manicures",
+		image: "/images/manicure.jpg",
 		items: [
 			{
 				id: 1,
@@ -49,6 +50,7 @@ export const fakeNailServiceData = [
 	},
 	{
 		category: "Nail Art",
+		image: "/images/img5.jpg",
 		items: [
 			{
 				id: 8,
@@ -101,6 +103,7 @@ export const fakeNailServiceData = [
 	},
 	{
 		category: "Removal",
+		image: "/images/remove.jpg",
 		items: [
 			{
 				id: 15,
@@ -126,6 +129,7 @@ export const fakeNailServiceData = [
 	},
 	{
 		category: "Extras",
+		image: "/images/img5.jpg",
 		items: [
 			{
 				id: 18,

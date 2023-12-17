@@ -16,9 +16,7 @@ const Testimonials = () => {
 
 	return (
 		<Container>
-			<h2 className='mt-4 mb-4 text-center animated-text'>
-				What my clients say
-			</h2>
+			<h2 className='mt-4 mb-4 text-center animated-text'>Testimonials</h2>
 			<Slider
 				{...settings}
 				style={{ backgroundColor: "rgba(255, 255, 255, 0.2)" }}
@@ -26,7 +24,10 @@ const Testimonials = () => {
 			>
 				{fakeTestimonials.map((testimonial) => (
 					<div key={testimonial.id}>
-						<Card className='text-center'>
+						<Card
+							className='text-center'
+							style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
+						>
 							<Card.Body>
 								<Card.Text>{testimonial.testimonial}</Card.Text>
 								<Card.Text className='text-muted'>
