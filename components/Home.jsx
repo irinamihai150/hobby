@@ -1,6 +1,5 @@
 import React from "react"
-import Testimonials from "./Testimonials"
-import { Container, Card } from "react-bootstrap"
+import { Container } from "react-bootstrap"
 import NailFaqs from "./NailFaqs"
 import { Button, Row, Col } from "react-bootstrap"
 
@@ -10,7 +9,7 @@ const Home = () => {
 			<Container className='home-container'>
 				<Row
 					className='mt-5 d-flex align-items-center justify-content-center '
-					style={{ height: "80vh" }}
+					style={{ height: "90vh" }}
 				>
 					<Col className='text-center'>
 						<h1 className='mb-4 p-3 animatedText text-center'>
@@ -18,14 +17,16 @@ const Home = () => {
 						</h1>
 						<h2 className='text-center mb-2'>Nails and Designs For You</h2>
 						<a href='/services'>
-							<Button variant='light' className='m-3 mx-auto d-block'>
+							<Button
+								variant='light'
+								className='m-3 mx-auto d-block button-price'
+							>
 								Full Price List
 							</Button>
 						</a>
 					</Col>
 				</Row>
-				<NailFaqs />
-				<Testimonials />
+				{/* <NailFaqs /> */}
 			</Container>
 		</div>
 	)

@@ -4,11 +4,17 @@ import { Navbar, Nav, Container } from "react-bootstrap"
 const MyNavBar = () => {
 	return (
 		<Navbar className='sticky-top' expand='lg'>
+			<Navbar.Brand className='text-center fs-1 Blazing m-3'>
+				Gells By Jess
+			</Navbar.Brand>
 			<Container>
-				<Navbar.Brand className='text-center fs-2'>Nail Art Jess</Navbar.Brand>
+				{/* <Navbar.Brand className='text-center fs-1 Blazing mt-2'>
+					Gells By Jess
+				</Navbar.Brand> */}
+
 				<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 				<Navbar.Collapse id='responsive-navbar-nav'>
-					<Nav className='m-auto mt-4'>
+					<Nav className='mr-auto mt-4'>
 						<Nav.Link href='/home'>Home</Nav.Link>
 						<Nav.Link href='/about'>About</Nav.Link>
 						<Nav.Link href='/gallery'>Gallery</Nav.Link>

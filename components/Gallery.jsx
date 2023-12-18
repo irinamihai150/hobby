@@ -29,30 +29,14 @@ const Gallery = () => {
 			borderRadius: "4px",
 		},
 	}
-	const shuffledVideoUrls = [
-		'<iframe width="560" height="315" src="https://www.youtube.com/embed/9sWK-U27yUg?si=xH8lC3XqlfE6aPGd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-		'<iframe width="560" height="315" src="https://www.youtube.com/embed/8IKdLJMC6LM?si=Xik5GJHi4b3iIL1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-		'<iframe width="560" height="315" src="https://www.youtube.com/embed/d6RS5GRG74Y?si=An7IzsC8JoMezbDU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-		'<iframe width="560" height="315" src="https://www.youtube.com/embed/yX5hpEodkgY?si=RHVIwyLqXWW0V_6a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-	]
 
 	return (
-		<Container className='p-4 container-gallery'>
-			{/* <Row className='d-flex justify-content-center align-items-center position-relative mb-4'>
-				<Col className='text-center'>
-					<Card.Img
-						className='background-image'
-						variant='top'
-						src='/images/polish.jpg'
-						alt='Card image'
-						style={{ width: "80%", height: "auto" }}
-					/>
-				</Col>
-				<Col className='position-absolute text-center w-100'>
-					<h2 className='mb-4'>Nail Art Gallery</h2>
-				</Col>
-			</Row> */}
-
+		<Container
+			className='p-4 container-gallery'
+			style={{
+				backgroundImage: `url('/images/polish.jpg')`,
+			}}
+		>
 			<ImageGallery
 				items={galleryItems}
 				styles={imageStyles}
@@ -60,28 +44,48 @@ const Gallery = () => {
 				showBullets={true}
 				showThumbnails={false}
 			/>
-			<h2>Videos</h2>
-			<Row>
-				{shuffledVideoUrls.map((videoUrl, index) => (
-					<Col key={index} md={6} lg={6} className='mb-4'>
-						<Card>
-							<Card.Body>
-								<Card.Title>Video {index + 1}</Card.Title>
-								<Card.Text>
-									{/* You can add additional information or description here */}
-								</Card.Text>
-								<iframe
-									title={`Video ${index + 1}`}
-									width='100%'
-									height='200'
-									src={videoUrl}
-									allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-									allowFullScreen
-								></iframe>
-							</Card.Body>
-						</Card>
-					</Col>
-				))}
+			<h2 className='text-center m-4 fs-1 fw-bold'>Videos</h2>
+			<Row className='d-flex text-center'>
+				<Col md={6} className='mb-3'>
+					<Card.Title className='mb-3'>How to Biab</Card.Title>
+					<iframe
+						className='embed-responsive-item'
+						src='https://www.youtube.com/embed/9sWK-U27yUg?si=xH8lC3XqlfE6aPGd'
+						title='YouTube video player'
+						frameborder='0'
+						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+					></iframe>
+				</Col>
+				<Col md={6}>
+					<Card.Title className='mb-3'>How to infill Biab</Card.Title>
+					<iframe
+						className='embed-responsive-item'
+						src='https://www.youtube.com/embed/8IKdLJMC6LM?si=Xik5GJHi4b3iIL1c'
+						title='YouTube video player'
+						frameborder='0'
+						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+					></iframe>
+				</Col>
+				<Col md={6}>
+					<Card.Title className='mb-3'>How to apply Builder Gel</Card.Title>
+					<iframe
+						className='embed-responsive-item'
+						src='https://www.youtube.com/embed/d6RS5GRG74Y?si=An7IzsC8JoMezbDU'
+						title='YouTube video player'
+						frameborder='0'
+						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+					></iframe>
+				</Col>
+				<Col md={6}>
+					<Card.Title className='mb-3'>Builder Gel</Card.Title>
+					<iframe
+						className='embed-responsive-item'
+						src='https://www.youtube.com/embed/yX5hpEodkgY?si=RHVIwyLqXWW0V_6a'
+						title='YouTube video player'
+						frameborder='0'
+						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+					></iframe>
+				</Col>
 			</Row>
 		</Container>
 	)

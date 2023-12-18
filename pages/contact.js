@@ -1,6 +1,6 @@
 import React from "react"
 import Head from "next/head"
-import ContactForm from "../components/ContactForm"
+import ContactComponent from "../components/ContactPage"
 import Layout from "../components/Layout"
 
 const ContactPage = () => {
@@ -10,7 +10,7 @@ const ContactPage = () => {
 				<title>Contact</title>
 			</Head>
 			<Layout>
-				<ContactForm />
+				<ContactComponent />
 			</Layout>
 		</>
 	)

@@ -16,7 +16,7 @@ const Testimonials = () => {
 
 	return (
 		<Container>
-			<h2 className='mt-4 mb-4 text-center animated-text'>Testimonials</h2>
+			<h2 className='mt-4 mb-4 text-center animated-text text-white'>Testimonials</h2>
 			<Slider
 				{...settings}
 				style={{ backgroundColor: "rgba(255, 255, 255, 0.2)" }}

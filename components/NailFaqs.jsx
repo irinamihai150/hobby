@@ -1,36 +1,3 @@
-// import React from "react"
-// import { Container, Card, Accordion } from "react-bootstrap"
-// import nailFaqs from "@/data/nailFaqs"
-
-// const NailFaqs = () => {
-// 	return (
-// 		<Container
-// 			className='mb-4'
-// 			style={{ backgroundColor: "rgba(255, 255, 255, 0.2)" }}
-// 		>
-// 			<h2 className='mt-4 mb-4 text-center animated-text'>
-// 				Frequently asked questions
-// 			</h2>
-// 			<Accordion flush style={{ backgroundColor: "rgba(255, 255, 255, 0.2)" }}>
-// 				{nailFaqs.map((faq, index) => (
-// 					<Accordion.Item key={index} eventKey={index.toString()}>
-// 						<Accordion.Header>
-// 							<h3>{faq.question}</h3>
-// 						</Accordion.Header>
-// 						<Accordion.Body>
-// 							<Card className='faq-item'>
-// 								<p className='p-3'>{faq.answer}</p>
-// 							</Card>
-// 						</Accordion.Body>
-// 					</Accordion.Item>
-// 				))}
-// 			</Accordion>
-// 		</Container>
-// 	)
-// }
-
-// export default NailFaqs
-
 import React, { useState } from "react"
 import { Container, Card } from "react-bootstrap"
 import nailFaqs from "@/data/nailFaqs"

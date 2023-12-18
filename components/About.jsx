@@ -3,7 +3,7 @@ import { Container, Card, Row, Col } from "react-bootstrap"
 
 const About = () => {
 	return (
-		<Container className='container-about testimonial-container'>
+		<Container className='testimonial-container'>
 			<Row className='d-flex justify-content-center align-items-center'>
 				<Row className='mb-5'>
 					<Col md={8}>

@@ -6,26 +6,49 @@ const ContactInfo = () => {
 	return (
 		<Container>
 			<Row>
-				<Col className='text-center'>
-					<div className='contact-info'>
-						<address className='contact-detail'>
-							<FaEnvelope />
-							<a href='mailto:jane@gmail.com' className='email-link p-2'>
-								jane@gmail.com
-							</a>
-						</address>
-						<p className='p-2'>
-							<FaMobileAlt />
-							<a href='tel:0044724348554' className='p-2'>
-								0044724348554
-							</a>
-						</p>
-						<address className='contact-detail'>
-							<strong>Somewhere</strong>
-						</address>
-						<p className='contact-detail'>
-							<strong>Monday-Saturday: 09:00 AM - 06:00 PM</strong>
-						</p>
+				<Col className='text-center mt-5'>
+					<div className='contact-info text-light'>
+						{/* Email Section */}
+						<div className='contact-section'>
+							<h4 className='contact-heading hover-orange'>Gmail:</h4>
+							<address className='contact-detail hover-orange'>
+								<FaEnvelope />
+								<a href='mailto:jane@gmail.com' className='email-link p-2'>
+									jane@gmail.com
+								</a>
+							</address>
+						</div>
+
+						{/* Phone Section */}
+						<div className='contact-section'>
+							<h4 className='contact-heading hover-orange'>Phone:</h4>
+							<p className='p-2'>
+								<FaMobileAlt />
+								<a href='tel:0044724348554' className='p-2 hover-orange'>
+									0044724348554
+								</a>
+							</p>
+						</div>
+
+						{/* Address Section */}
+						<div className='contact-section'>
+							<h4 className='contact-heading hover-orange'>Address:</h4>
+							<address className='contact-detail hover-orange'>
+								<strong>Birmingham</strong>
+							</address>
+						</div>
+
+						{/* Opening Times Section */}
+						<div className='contact-section'>
+							<h4 className='contact-heading hover-orange'>Opening Times</h4>
+							<p className='contact-detail hover-orange'>
+								<strong>
+									Monday-Friday: 09:00 AM - 05:00 PM
+									<br />
+									Saturday: 09:00 AM - 03:00 PM
+								</strong>
+							</p>
+						</div>
 					</div>
 				</Col>
 			</Row>

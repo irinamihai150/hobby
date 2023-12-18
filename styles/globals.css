@@ -13,6 +13,45 @@ h2 {
 header {
 	height: 6em;
 }
+Nav {
+	font-size: 1.5em;
+
+}
+
+.Blazing {
+	display: inline-block;
+	margin: 0;
+	color: rgb(255, 115, 0);
+	text-shadow: 0 3px 20px red, 0 0 20px red, 0 0 10px orange,
+		4px -5px 6px yellow, -4px -10px 10px yellow, 0 -10px 30px yellow;
+	animation: 2s Blazing infinite alternate linear;
+}
+
+@keyframes Blazing {
+	0% {
+		text-shadow: 0 3px 20px #444, 0 0 20px #444, 0 0 10px #333, 0 0 0 #222,
+			0 0 5px #222, -2px -5px 5px #222, 4px -10px 10px #222;
+	}
+	25% {
+		text-shadow: 0 3px 20px #444, 0 0 30px #444, 0 0 20px #333, 0 0 5px #222,
+			-2px -5px 5px #222, 3px -10px 10px #222, -4px -15px 20px #222;
+	}
+	50% {
+		text-shadow: 0 3px 20px #444, 0 0 20px #444, 0 -5px 10px #333,
+			-2px -5px 5px #222, 3px -10px 10px #222, -4px -15px 20px #222,
+			2px -20px 30px rgba(34, 34, 34, 0.5);
+	}
+	75% {
+		text-shadow: 0 3px 20px #444, 0 0 20px #444, 0 -5px 10px #333,
+			3px -5px 5px #222, -4px -10px 10px #222,
+			2px -20px 30px rgba(34, 34, 34, 0.5), 0px -25px 40px rgba(34, 34, 34, 0);
+	}
+	100% {
+		text-shadow: 0 3px 20px #444, 0 0 20px #444, 0 0 10px #333, 0 0 0 #222,
+			0 0 5px #222, -2px -5px 5px #222, 4px -10px 10px #222;
+	}
+}
+
 /*  whole app */
 
 .home-background {
@@ -134,11 +173,15 @@ header {
 }
 .container-gallery {
 	border: 2px solid #ddd;
-	margin-top: 2em;
-	margin-bottom: 2em;
+	/* margin-top: 2em;
+	margin-bottom: 2em; */
 	border-radius: 12px;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-	padding: 20px;
+	/* padding: 20px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.8; */
 }
 
 /* about component */
@@ -148,21 +191,22 @@ header {
 	font-weight: bold;
 }
 
-.background-image {
+/* .background-image {
 	width: 100%;
 	height: auto;
-}
+} */
 /* services */
 h2 {
 	font-size: 2.5rem;
 }
 /* testimonial */
 .testimonial-container {
-	background-image: url("/images/background.jpg");
+	background-image: url("/images/polish.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	height: auto;
+	background-color: rgba(255, 255, 255, 0.8);
 }
 .card-about {
 	/* background: rgba(255, 255, 255, 0.3); */
@@ -192,4 +236,44 @@ footer {
 .contact-background {
 	background-color: beige;
 	min-height: "100vh";
+}
+
+.hover-orange:hover {
+	color: orange;
+}
+
+@keyframes scaleAndFadeIn {
+	from {
+		opacity: 0;
+		transform: scale(0.8);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+h2 {
+	animation: scaleAndFadeIn 1s ease-out;
+}
+.button-price {
+	background-color: grey;
+	width: 6em;
+	height: 4em;
+	color: #fff;
+	border-radius: 8px;
+	transition: background-color 0.3s ease;
+	text-decoration: none;
+}
+.button-price:hover {
+	background-color: orange;
+}
+/* media */
+@media (max-width: 767px) {
+	h1 {
+		font-size: 3rem;
+	}
+	Nav {
+		font-size: 1em;
+	}
 }

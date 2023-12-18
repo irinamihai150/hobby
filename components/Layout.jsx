@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
 					<Row className='align-items-center'>
 						<Col xs={12} md={3}>
 							<div className='text-center py-3 fw-bold'>
-								{currentYear} Nail Art &copy; All Rights Reserved
+								{currentYear} Gells By JESS &copy; All Rights Reserved
 							</div>
 						</Col>
 
@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
 							className='d-flex justify-content-center align-items-center'
 						>
 							<div>
-								<h5 className='fw-bold'>Follow Me</h5>
+								<h3 className='fw-bold hover-orange'>Follow Me</h3>
 								<a
 									href='https://www.instagram.com/'
 									target='_blank'
