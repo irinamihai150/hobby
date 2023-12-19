@@ -1,5 +1,6 @@
 import React from "react"
 import { Container, Card, Row, Col } from "react-bootstrap"
+import NailFaqs from "./NailFaqs"
 
 const About = () => {
 	return (
@@ -76,6 +77,9 @@ const About = () => {
 					</Card>
 				</Col>
 			</Row>
+			<Col>
+				<NailFaqs />
+			</Col>
 		</Container>
 	)
 }

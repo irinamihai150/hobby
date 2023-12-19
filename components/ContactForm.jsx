@@ -1,7 +1,7 @@
 import { sendContactForm } from "@/lib/api"
 import React, { useState } from "react"
 import { Container, Form, Row, Col, Button } from "react-bootstrap"
-import ContactInfo from "./ContactInfo"
+
 
 const initValues = { name: "", email: "", subject: "", message: "" }
 const initState = { values: initValues }

@@ -40,12 +40,14 @@ const ContactInfo = () => {
 
 						{/* Opening Times Section */}
 						<div className='contact-section'>
-							<h4 className='contact-heading hover-orange'>Opening Times</h4>
+							<h4 className='contact-heading fw-bold hover-orange underline-orange'>
+								Opening Times
+							</h4>
 							<p className='contact-detail hover-orange'>
 								<strong>
-									Monday-Friday: 09:00 AM - 05:00 PM
+									Mon-Fri: 09:00 AM - 05:00 PM
 									<br />
-									Saturday: 09:00 AM - 03:00 PM
+									Sat: 09:00 AM - 03:00 PM
 								</strong>
 							</p>
 						</div>

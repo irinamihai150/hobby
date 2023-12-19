@@ -4,6 +4,7 @@ import Slider from "react-slick"
 import { fakeTestimonials } from "../data/fakeTestimonials"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import { FaStar } from "react-icons/fa"
 
 const Testimonials = () => {
 	const settings = {
@@ -16,7 +17,13 @@ const Testimonials = () => {
 
 	return (
 		<Container>
-			<h2 className='mt-4 mb-4 text-center animated-text text-white'>Testimonials</h2>
+			<h2 className='mt-4 mb-4 text-center animated-text text-white'>
+				Testimonials <FaStar style={{ color: "orange" }} />
+				<FaStar style={{ color: "orange" }} />
+				<FaStar style={{ color: "orange" }} />
+				<FaStar style={{ color: "orange" }} />
+				<FaStar style={{ color: "orange" }} />
+			</h2>
 			<Slider
 				{...settings}
 				style={{ backgroundColor: "rgba(255, 255, 255, 0.2)" }}

@@ -15,9 +15,53 @@ header {
 }
 Nav {
 	font-size: 1.5em;
-
 }
 
+.button-book {
+	background-color: orange;
+	margin-top: 2em;
+	width: 8em;
+	padding: 1em;
+	height: 4em;
+	decoration: none;
+	border-radius: 8px;
+}
+.button-book:hover {
+	background-color: grey;
+}
+
+.button-text {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.button-price {
+	background-color: orange;
+	width: 6em;
+	height: 4em;
+	border-radius: 8px;
+	/* transition: background-color 0.3s ease; */
+	text-decoration: none;
+}
+.button-price:hover {
+	background-color: grey;
+}
+.animatedTextH2 {
+	animation-name: fadeInUp;
+	animation-duration: 1.5s;
+	animation-delay: 1s;
+	animation-fill-mode: both;
+}
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
 .Blazing {
 	display: inline-block;
 	margin: 0;
@@ -74,9 +118,6 @@ Nav {
 	0% {
 		background-image: url("../public/images/IMG_0718.jpg");
 	}
-	/* 33% {
-		background-image: url("../public/images/IMG_0719.jpg");
-	} */
 	50% {
 		background-image: url("../public/images/IMG_0720.jpg");
 	}
@@ -97,13 +138,6 @@ Nav {
 		0.3
 	); /* Adjust the opacity (last parameter) */
 }
-/* navbar component */
-/* .custom-navbar h2 {
-	font-size: 2.5rem;
-}
-.custom-navbar {
-	font-size: 2rem;
-} */
 
 /* header */
 header {
@@ -173,28 +207,18 @@ header {
 }
 .container-gallery {
 	border: 2px solid #ddd;
-	/* margin-top: 2em;
-	margin-bottom: 2em; */
 	border-radius: 12px;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-	/* padding: 20px;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	opacity: 0.8; */
 }
-
+.red-text {
+	color: red;
+}
 /* about component */
 
 .about-header {
 	font-size: 2rem;
 	font-weight: bold;
 }
-
-/* .background-image {
-	width: 100%;
-	height: auto;
-} */
 /* services */
 h2 {
 	font-size: 2.5rem;
@@ -256,18 +280,7 @@ footer {
 h2 {
 	animation: scaleAndFadeIn 1s ease-out;
 }
-.button-price {
-	background-color: grey;
-	width: 6em;
-	height: 4em;
-	color: #fff;
-	border-radius: 8px;
-	transition: background-color 0.3s ease;
-	text-decoration: none;
-}
-.button-price:hover {
-	background-color: orange;
-}
+
 /* media */
 @media (max-width: 767px) {
 	h1 {

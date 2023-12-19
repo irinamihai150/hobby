@@ -3,6 +3,7 @@ import { fakeNailServiceData } from "../data/fakeNailServiceData"
 import { Container, Button, Row, Col, Card, Table } from "react-bootstrap"
 // import ExpandableText from "./ExpandableText"
 import Testimonials from "./Testimonials"
+import { FaHeart } from "react-icons/fa"
 
 const Services = () => {
 	const maxLength = 150
@@ -19,13 +20,12 @@ const Services = () => {
 					<Col className='text-white text-center p-5'>
 						<h2 className='m-4 text-center fw-bold'>My services price list</h2>
 						<div className='text-center'>
-							<a
-								href='https://www.instagram.com/'
-								target='_blank'
-								rel='noopener noreferrer'
+							<Button
+								href='https://bookings.gettimely.com/gelsbyjesz/book?fbclid=PAAaZ-k8NL74baWImWRLckNBqlDx5ZeIdObR7rk2vzyrKGm7DOXHZsw2GMdCM_aem_AaIjBRUGo3_6gefL-mVuwudyzqJYj4CgbBL5APspE1TORfCZQvKo5KJUQq55nAYQxGc'
+								variant='dark'
 							>
-								<Button variant='dark hover-orange'>Book Here</Button>
-							</a>
+								Book Here
+							</Button>
 						</div>
 					</Col>
 				</Row>
@@ -36,7 +36,12 @@ const Services = () => {
 				</h3>
 				{fakeNailServiceData.map((category) => (
 					<React.Fragment key={category.category}>
-						<h2 className='text-center text-white'>{category.category}</h2>
+						<h2 className='text-center text-white'>
+							{category.category}
+							<FaHeart style={{ padding: "5px", color: "orange" }} />
+							<FaHeart style={{ padding: "5px", color: "orange" }} />
+							<FaHeart style={{ padding: "5px", color: "orange" }} />
+						</h2>
 						<Table striped responsive>
 							<thead>
 								<tr>

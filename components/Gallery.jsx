@@ -21,7 +21,6 @@ const Gallery = () => {
 			height: "auto",
 			borderRadius: "8px",
 			boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-			// marginTop:"20px"
 		},
 		thumbnail: {
 			width: "100px",
@@ -37,6 +36,11 @@ const Gallery = () => {
 				backgroundImage: `url('/images/polish.jpg')`,
 			}}
 		>
+			<h2 className='mb-4 p-4 text-center'>
+				Please also check my <span className='red-text'>Instagram</span> and
+				<span className='red-text'>Pinterest</span> Page for more inspirational
+				and latest creative designs.
+			</h2>
 			<ImageGallery
 				items={galleryItems}
 				styles={imageStyles}
