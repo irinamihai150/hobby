@@ -4,7 +4,8 @@ import { Container, Row, Col } from "react-bootstrap"
 import { FaInstagram, FaPinterest } from "react-icons/fa"
 import HelpButton from "./HelpButton.jsx"
 import { FaHeart } from "react-icons/fa"
-import { FaUserPlus } from "react-icons/fa"
+import { FaUsers } from "react-icons/fa"
+import ContactInfo from "./ContactInfo.jsx"
 
 const Layout = ({ children }) => {
 	let currentYear = new Date().getFullYear()
@@ -30,9 +31,12 @@ const Layout = ({ children }) => {
 							md={6}
 							className='d-flex justify-content-center align-items-start'
 						>
-							<p className='fw-bold hover-orange fs-2 me-3 mb-0'>Follow Me</p>
+							<p className='fw-bold hover-orange fs-2 me-3 mb-0'>
+								<FaUsers style={{ marginRight: "0.5em" }} size={30} />
+								Follow Me
+							</p>
 							<a
-								href='https://www.instagram.com/'
+								href='https://www.instagram.com/gels.byjess?igshid=OGQ5ZDc2ODk2ZA=='
 								target='_blank'
 								rel='noopener noreferrer'
 							>
@@ -59,6 +63,7 @@ const Layout = ({ children }) => {
 					</Row>
 					<HelpButton />
 				</Container>
+				{/* <ContactInfo /> */}
 			</footer>
 		</div>
 	)

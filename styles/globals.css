@@ -290,3 +290,22 @@ h2 {
 		font-size: 1em;
 	}
 }
+/* 
+.custom-container {
+	margin: auto;
+	margin: auto;
+	padding: auto;
+	padding: auto;
+} */
+
+.max-width-col {
+	max-width: 60%;
+	margin: auto;
+}
+
+.react-gallery {
+	width: 90%;
+	height: auto;
+	border-radius: 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

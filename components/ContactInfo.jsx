@@ -7,12 +7,12 @@ const ContactInfo = () => {
 		<Container>
 			<Row>
 				<Col className='text-center mt-5'>
-					<div className='contact-info text-light'>
+					<div className='contact-info'>
 						{/* Email Section */}
 						<div className='contact-section'>
-							<h4 className='contact-heading hover-orange'>Gmail:</h4>
+							<h4 className='contact-heading hover-orange'>Gmail</h4>
 							<address className='contact-detail hover-orange'>
-								<FaEnvelope />
+								<FaEnvelope aria-hidden='true' />
 								<a href='mailto:jane@gmail.com' className='email-link p-2'>
 									jane@gmail.com
 								</a>
@@ -21,9 +21,9 @@ const ContactInfo = () => {
 
 						{/* Phone Section */}
 						<div className='contact-section'>
-							<h4 className='contact-heading hover-orange'>Phone:</h4>
+							<h4 className='contact-heading hover-orange'>Phone</h4>
 							<p className='p-2'>
-								<FaMobileAlt />
+								<FaMobileAlt aria-hidden='true' />
 								<a href='tel:0044724348554' className='p-2 hover-orange'>
 									0044724348554
 								</a>
@@ -32,7 +32,7 @@ const ContactInfo = () => {
 
 						{/* Address Section */}
 						<div className='contact-section'>
-							<h4 className='contact-heading hover-orange'>Address:</h4>
+							<h4 className='contact-heading hover-orange'>Address</h4>
 							<address className='contact-detail hover-orange'>
 								<strong>Birmingham</strong>
 							</address>

@@ -8,7 +8,6 @@ import { FaStar } from "react-icons/fa"
 
 const Testimonials = () => {
 	const settings = {
-		// dots: true,
 		infinite: true,
 		speed: 500,
 		slidesToShow: 1,
@@ -22,7 +21,7 @@ const Testimonials = () => {
 				<FaStar style={{ color: "orange" }} />
 				<FaStar style={{ color: "orange" }} />
 				<FaStar style={{ color: "orange" }} />
-				<FaStar style={{ color: "orange" }} />
+				{/* <FaStar style={{ color: "orange" }} /> */}
 			</h2>
 			<Slider
 				{...settings}

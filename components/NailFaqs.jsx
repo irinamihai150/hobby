@@ -11,15 +11,9 @@ const NailFaqs = () => {
 
 	return (
 		<Container
-			className='m-4'
-			style={{
-				backgroundColor: "rgba(255, 255, 255, 0.2)",
-				border: "2px solid #ddd",
-				borderRadius: "8px",
-				marginBottom: "10px",
-			}}
+			className='mx-auto max-width-col'
 		>
-			<h2 className='mt-5 mb-4 text-center animated-text'>
+			<h2 className='mt-5 mb-4 text-center animated-text text-light'>
 				Frequently asked questions
 			</h2>
 			<div>
@@ -27,7 +21,7 @@ const NailFaqs = () => {
 					<Card
 						key={index}
 						className='faq-item m-2'
-						style={{ backgroundColor: "rgba(255, 255, 255, 0.2)" }}
+						// style={{ backgroundColor: "rgba(255, 255, 255, 0.2)" }}
 					>
 						<Card.Body>
 							<h3

@@ -9,84 +9,70 @@ const Gallery = () => {
 			original: item.image,
 			thumbnail: item.image,
 			description: item.description,
-			caption: item.caption,
+			// caption: item.caption,
 			// caption: `Category: ${category.category}`,
 		}))
 		return accumulator.concat(categoryItems)
 	}, [])
 
-	const imageStyles = {
-		original: {
-			width: "100%",
-			height: "auto",
-			borderRadius: "8px",
-			boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-		},
-		thumbnail: {
-			width: "100px",
-			height: "75px",
-			borderRadius: "4px",
-		},
-	}
-
 	return (
 		<Container
-			className='p-4 container-gallery'
+	
+			className='p-0 container-gallery'
 			style={{
 				backgroundImage: `url('/images/polish.jpg')`,
 			}}
 		>
 			<h2 className='mb-4 p-4 text-center'>
 				Please also check my <span className='red-text'>Instagram</span> and
-				<span className='red-text'>Pinterest</span> Page for more inspirational
-				and latest creative designs.
+				<span className='red-text'> Pinterest</span> <br />
+				Page for more inspirational and latest creative designs.
 			</h2>
-			<ImageGallery
-				items={galleryItems}
-				styles={imageStyles}
-				showFullscreenButton={false}
-				showBullets={true}
-				showThumbnails={false}
-			/>
+			<Col className='ms-0'>
+				<ImageGallery
+					className='react-gallery'
+					items={galleryItems}
+					showFullscreenButton={false}
+					showBullets={true}
+					showThumbnails={false}
+				/>
+			</Col>
+
 			<h2 className='text-center m-4 fs-1 fw-bold'>Videos</h2>
-			<Row className='d-flex text-center'>
+			<Row className='d-flex text-center mb-4 ms-auto'>
 				<Col md={6} className='mb-3'>
-					<Card.Title className='mb-3'>How to Biab</Card.Title>
+					<h3 className='mb-3'>How to Biab</h3>
 					<iframe
 						className='embed-responsive-item'
 						src='https://www.youtube.com/embed/9sWK-U27yUg?si=xH8lC3XqlfE6aPGd'
 						title='YouTube video player'
-						frameborder='0'
 						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
 					></iframe>
 				</Col>
 				<Col md={6}>
-					<Card.Title className='mb-3'>How to infill Biab</Card.Title>
+					<h3 className='mb-3'>How to infill Biab</h3>
 					<iframe
 						className='embed-responsive-item'
 						src='https://www.youtube.com/embed/8IKdLJMC6LM?si=Xik5GJHi4b3iIL1c'
 						title='YouTube video player'
-						frameborder='0'
 						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
 					></iframe>
 				</Col>
 				<Col md={6}>
-					<Card.Title className='mb-3'>How to apply Builder Gel</Card.Title>
+					<h3 className='mb-3'>How to apply Builder Gel</h3>
 					<iframe
 						className='embed-responsive-item'
 						src='https://www.youtube.com/embed/d6RS5GRG74Y?si=An7IzsC8JoMezbDU'
 						title='YouTube video player'
-						frameborder='0'
 						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
 					></iframe>
 				</Col>
 				<Col md={6}>
-					<Card.Title className='mb-3'>Builder Gel</Card.Title>
+					<h3 className='mb-3'>Builder Gel</h3>
 					<iframe
 						className='embed-responsive-item'
 						src='https://www.youtube.com/embed/yX5hpEodkgY?si=RHVIwyLqXWW0V_6a'
 						title='YouTube video player'
-						frameborder='0'
 						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
 					></iframe>
 				</Col>
