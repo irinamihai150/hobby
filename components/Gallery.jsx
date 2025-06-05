@@ -17,7 +17,6 @@ const Gallery = () => {
 
 	return (
 		<Container
-	
 			className='p-0 container-gallery'
 			style={{
 				backgroundImage: `url('/images/polish.jpg')`,

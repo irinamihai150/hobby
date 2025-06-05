@@ -25,13 +25,13 @@ const Home = () => {
 								Full Price List
 							</Button>
 						</a> */}
-						<Button
+						{/* <Button
 							variant='dark'
 							className='button-book'
 							href='https://bookings.gettimely.com/gelsbyjesz/book?fbclid=PAAaZ-k8NL74baWImWRLckNBqlDx5ZeIdObR7rk2vzyrKGm7DOXHZsw2GMdCM_aem_AaIjBRUGo3_6gefL-mVuwudyzqJYj4CgbBL5APspE1TORfCZQvKo5KJUQq55nAYQxGc'
 						>
 							<span className='button-text'>Book Now</span>
-						</Button>
+						</Button> */}
 					</Col>
 				</Row>
 			</Container>
