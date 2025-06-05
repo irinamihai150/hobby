@@ -20,12 +20,12 @@ const Services = () => {
 					<Col className='text-white text-center p-5'>
 						<h2 className='m-4 text-center fw-bold'>My services price list</h2>
 						<div className='text-center'>
-							<Button
+							{/* <Button
 								href='https://bookings.gettimely.com/gelsbyjesz/book?fbclid=PAAaZ-k8NL74baWImWRLckNBqlDx5ZeIdObR7rk2vzyrKGm7DOXHZsw2GMdCM_aem_AaIjBRUGo3_6gefL-mVuwudyzqJYj4CgbBL5APspE1TORfCZQvKo5KJUQq55nAYQxGc'
 								variant='dark'
 							>
 								Book Here
-							</Button>
+							</Button> */}
 						</div>
 					</Col>
 				</Row>
